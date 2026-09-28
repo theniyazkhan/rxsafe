@@ -30,8 +30,8 @@ htmlcov/
 .vscode/
 .idea/
 
-# Data & Results exclusions (uncomment as needed)
-# data/raw/*
-# !data/raw/.gitkeep
+# Data & Results exclusions
+data/raw/*
+!data/raw/.gitkeep
 # results/runs/*
 # !results/runs/.gitkeep
