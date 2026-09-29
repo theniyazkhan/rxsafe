@@ -1,5 +1,6 @@
 paths:
   catalogue: data/external/catalogue_2026-09-25/medicine.csv
+  catalogue_sample: data/raw/medicine_sample_7rows.csv
   ddinter: data/interim/ddinter_combined.csv
   gold_brands: data/processed/gold_brands.csv
 normalize:

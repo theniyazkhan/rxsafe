@@ -32,6 +32,8 @@ htmlcov/
 
 # Data & Results exclusions
 data/raw/*
-!data/raw/.gitkeep
+data/external/*
+data/interim/*
+!**/.gitkeep
 # results/runs/*
 # !results/runs/.gitkeep

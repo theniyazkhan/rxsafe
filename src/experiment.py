@@ -10,7 +10,7 @@ from src.ddi import load_ddi
 from src.screen import check_interactions
 
 
-def run_pipeline(input_path: str, mode: str):
+def run_pipeline(input_path: str, mode: str, use_sample: bool = False):
     if not os.path.exists("config.yaml"):
         print("Error: config.yaml not found.")
         sys.exit(1)
@@ -18,7 +18,11 @@ def run_pipeline(input_path: str, mode: str):
     with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
         
-    cat_path = config["paths"]["catalogue"]
+    if use_sample:
+        cat_path = config["paths"]["catalogue_sample"]
+    else:
+        cat_path = config["paths"]["catalogue"]
+        
     ddi_path = config["paths"]["ddinter"]
     threshold = config["normalize"]["threshold"]
     
@@ -115,6 +119,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default=None)
     parser.add_argument("--mode", choices=["normalize", "screen"], required=True)
+    parser.add_argument("--sample", action="store_true")
     args = parser.parse_args()
     
     if args.input is None:
@@ -129,4 +134,4 @@ if __name__ == "__main__":
             print("No prescription file supplied. Screening mode requires real multi-drug prescriptions.")
             sys.exit(0)
             
-    run_pipeline(args.input, args.mode)
+    run_pipeline(args.input, args.mode, args.sample)

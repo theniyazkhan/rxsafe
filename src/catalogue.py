@@ -16,6 +16,7 @@ def clean_name(s):
 def load_catalogue(path):
     print("Loading catalogue from:", path)
     df = pd.read_csv(path)
+    print(f"Loaded {len(df)} rows from {path}")
     
     brand_col = "brand name" if "brand name" in df.columns else ("brand" if "brand" in df.columns else None)
     gen_col = "generic" if "generic" in df.columns else None
@@ -54,6 +55,11 @@ def expand_catalogue(df, generic_col="generic"):
 
 if __name__ == "__main__":
     import sys
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--sample", action="store_true")
+    args = parser.parse_args()
+
     if not os.path.exists("config.yaml"):
         print("Error: config.yaml not found.")
         sys.exit(1)
@@ -61,7 +67,10 @@ if __name__ == "__main__":
     with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
     
-    raw_path = config["paths"]["catalogue"]
+    if args.sample:
+        raw_path = config["paths"]["catalogue_sample"]
+    else:
+        raw_path = config["paths"]["catalogue"]
     if not os.path.exists(raw_path):
         print(f"Error: Catalogue file expected at '{raw_path}' does not exist.")
         sys.exit(1)

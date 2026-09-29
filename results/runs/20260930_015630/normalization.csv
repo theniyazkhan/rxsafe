@@ -1,0 +1,129 @@
+brand,expected_generic,matched_generic,score,abstained,correct
+Napa,paracetamol,['paracetamol'],1.0,False,True
+Napa Extra,paracetamol + caffeine,"['paracetamol', 'caffeine']",1.0,False,True
+Napa Extend,paracetamol,,0.7619047619047619,True,False
+Ace,paracetamol,['paracetamol'],1.0,False,True
+Ace Plus,paracetamol + caffeine,,0.5454545454545454,True,False
+Pyrex,paracetamol,,0.4,True,False
+Renova,paracetamol,,0.4615384615384615,True,False
+Fast,paracetamol,,0.4,True,False
+Reset,paracetamol,,0.4,True,False
+Tamip,paracetamol,,0.5454545454545454,True,False
+Xpa,paracetamol,,0.5714285714285714,True,False
+Dexatab,dexamethasone,,0.4705882352941176,True,False
+Clofen,diclofenac,,0.5454545454545454,True,False
+Voltagel,diclofenac,,0.36363636363636365,True,False
+Aknofen,aceclofenac,,0.4,True,False
+Flexi,aceclofenac,,0.2666666666666667,True,False
+Mefen,mefenamic acid,,0.33333333333333337,True,False
+Naprox,naproxen,,0.6,True,False
+Xenar,naproxen,,0.5,True,False
+Tramagut,tramadol,,0.33333333333333337,True,False
+Anzitor,atorvastatin,,0.3529411764705882,True,False
+Atova,atorvastatin,,0.4444444444444444,True,False
+Lipicon,atorvastatin,,0.5333333333333333,True,False
+Tigon,rosuvastatin,,0.4615384615384615,True,False
+Rosu,rosuvastatin,,0.4,True,False
+Bizoran,olmesartan + amlodipine,,0.4,True,False
+Camlodin,amlodipine,,0.7142857142857143,True,False
+Amlopin,amlodipine,,0.6153846153846154,True,False
+Tuze,losartan,,0.2857142857142857,True,False
+Angilock,losartan,,0.375,True,False
+Osartil,losartan,,0.33333333333333337,True,False
+Protor,bisoprolol,,0.4285714285714286,True,False
+Bisocor,bisoprolol,,0.5,True,False
+Carvedil,carvedilol,,0.4285714285714286,True,False
+Indever,propranolol,,0.3529411764705882,True,False
+Dilzem,diltiazem,,0.33333333333333337,True,False
+Serta,sertraline,,0.5,True,False
+Zap,clonazepam,,0.5714285714285714,True,False
+Rivotril,clonazepam,,0.375,True,False
+Disopan,clonazepam,,0.4615384615384615,True,False
+Passe,lorazepam,,0.5,True,False
+Xenid,diazepam,,0.5,True,False
+Easium,diazepam,,0.33333333333333337,True,False
+Melix,meloxicam,,0.4,True,False
+Pregaba,pregabalin,,0.36363636363636365,True,False
+Neugabin,pregabalin,,0.33333333333333337,True,False
+Linap,linagliptin,,0.6666666666666667,True,False
+Combitrol,linagliptin + metformin,,0.4705882352941176,True,False
+Metfo,metformin,,0.4,True,False
+Comet,metformin,,0.5,True,False
+Gliben,glibenclamide,,0.3076923076923077,True,False
+Securin,gliclazide,,0.5333333333333333,True,False
+Glucozone,pioglitazone,,0.3529411764705882,True,False
+Empaglif,empagliflozin,,0.33333333333333337,True,False
+Seclo,omeprazole,['omeprazole'],1.0,False,True
+Losectil,omeprazole,,0.6153846153846154,True,False
+Ometid,omeprazole,,0.4615384615384615,True,False
+Proceptin,omeprazole,,0.7058823529411764,True,False
+Sergel,esomeprazole,,0.5454545454545454,True,False
+Maxpro,esomeprazole,,0.4285714285714286,True,False
+Opton,esomeprazole,,0.4615384615384615,True,False
+Esonix,esomeprazole,,0.36363636363636365,True,False
+Pantonix,pantoprazole,,0.4285714285714286,True,False
+Pantid,pantoprazole,,0.4615384615384615,True,False
+Trupan,pantoprazole,,0.4,True,False
+Rabeca,rabeprazole,,0.4444444444444444,True,False
+Finix,rabeprazole,,0.3076923076923077,True,False
+Dexivant,dexlansoprazole,,0.4,True,False
+Amodis,metronidazole,['metronidazole'],1.0,False,True
+Filmet,metronidazole,,0.3076923076923077,True,False
+Flamyd,metronidazole,,0.5,True,False
+Ciprocin,ciprofloxacin,['ciprofloxacin'],1.0,False,True
+Neocip,ciprofloxacin,,0.4285714285714286,True,False
+Becomax,vitamin b complex,,0.5,True,False
+Aristovit,multivitamin,,0.4,True,False
+D-Rise,cholecalciferol,,0.5,True,False
+Calbo,calcium carbonate,,0.6,True,False
+Calbo D,calcium carbonate + vitamin d3,,0.5,True,False
+Coralcal D,coral calcium + vitamin d3,,0.3529411764705882,True,False
+Bextram,multivitamin + multimineral,,0.5882352941176471,True,False
+Neuro-B,vitamin b1 b6 b12,,0.3529411764705882,True,False
+Neobion,vitamin b1 b6 b12,,0.4,True,False
+Alatrol,cetirizine,,0.4705882352941176,True,False
+Atizin,cetirizine,,0.4285714285714286,True,False
+Cetron,cetirizine,,0.5714285714285714,True,False
+Fexo,fexofenadine,,0.4444444444444444,True,False
+Telfast,fexofenadine,,0.33333333333333337,True,False
+Dinate,fexofenadine,,0.4444444444444444,True,False
+Deslor,desloratadine,,0.5454545454545454,True,False
+Denaz,desloratadine,,0.5,True,False
+Rupifin,rupatadine,,0.4,True,False
+Bilasten,bilastine,,0.36363636363636365,True,False
+Ebas,ebastine,,0.4,True,False
+Azithrocin,azithromycin,,0.6666666666666667,True,False
+Zimax,azithromycin,,0.2666666666666667,True,False
+Trulimax,azithromycin,,0.33333333333333337,True,False
+Odaz,azithromycin,,0.4,True,False
+Cef3,cefixime,,0.5714285714285714,True,False
+Emcef,cefixime,,0.5,True,False
+Denvar,cefixime,,0.4615384615384615,True,False
+Tyclav,amoxicillin + clavulanic acid,,0.36363636363636365,True,False
+Fimoxyl,amoxicillin,,0.3076923076923077,True,False
+Moxacil,amoxicillin,,0.4615384615384615,True,False
+Cefron,cephradine,,0.5714285714285714,True,False
+Dicef,cephradine,,0.5,True,False
+Ultrafen,fenofibrate,,0.36363636363636365,True,False
+Montene,montelukast,,0.3076923076923077,True,False
+Monas,montelukast,,0.5454545454545454,True,False
+Lumona,montelukast,,0.4,True,False
+Provair,montelukast,,0.5333333333333333,True,False
+Windel,salbutamol,,0.36363636363636365,True,False
+Ventolin,salbutamol,,0.4,True,False
+Asmasol,salbutamol,,0.4615384615384615,True,False
+Bexitrol,salmeterol + fluticasone,,0.4444444444444444,True,False
+Doxovent,doxofylline,,0.4,True,False
+Filwel,multivitamin,,0.36363636363636365,True,False
+Omidon,domperidone,,0.4285714285714286,True,False
+Motigut,domperidone,,0.4615384615384615,True,False
+Domin,domperidone,,0.4615384615384615,True,False
+Ondron,ondansetron,,0.4285714285714286,True,False
+Emistat,ondansetron,,0.4615384615384615,True,False
+Onset,ondansetron,,0.4,True,False
+Entacyd,aluminium hydroxide + magnesium hydroxide,"['magnesium hydroxide', 'aluminium hydroxide']",1.0,False,True
+Flatun,simethicone,,0.25,True,False
+Digicon,simethicone,,0.4,True,False
+Tofen,ketotifen,,0.33333333333333337,True,False
+Fenat,ketotifen,,0.5,True,False
+Ecap,vitamin e,,0.5,True,False
