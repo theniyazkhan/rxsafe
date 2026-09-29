@@ -1,18 +1,21 @@
 import pandas as pd
 
 
+def _make_pair(drug_a: str, drug_b: str) -> tuple[str, str]:
+    """Normalizes and sorts drug names for bidirectional lookup."""
+    a = str(drug_a).strip().lower()
+    b = str(drug_b).strip().lower()
+    return min(a, b), max(a, b)
+
+
 def load_ddi(path: str) -> dict:
     """Loads concatenated DDInter CSV into an O(1) lookup dictionary."""
     df = pd.read_csv(path)
 
     lookup = {}
     for drug_a, drug_b, level in zip(df["Drug_A"], df["Drug_B"], df["Level"]):
-        a = str(drug_a).strip().lower()
-        b = str(drug_b).strip().lower()
-        severity = str(level).strip()
-
-        # Store normalized, sorted pair to allow bidirectional lookup
-        pair = (min(a, b), max(a, b))
+        severity = str(level).strip().lower()
+        pair = _make_pair(drug_a, drug_b)
         lookup[pair] = severity
 
     return lookup
@@ -20,9 +23,7 @@ def load_ddi(path: str) -> dict:
 
 def get_interaction(drug_a: str, drug_b: str, lookup: dict):
     """Returns severity rating or None if no interaction is recorded."""
-    a = drug_a.strip().lower()
-    b = drug_b.strip().lower()
-    pair = (min(a, b), max(a, b))
+    pair = _make_pair(drug_a, drug_b)
     return lookup.get(pair, None)
 
 
