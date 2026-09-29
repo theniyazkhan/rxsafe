@@ -60,3 +60,8 @@ Run test suite to verify setup:
 ```bash
 pytest
 ```
+
+Run the safety screening pipeline on the gold standard brands dataset:
+```bash
+python -m src.experiment --input data/processed/gold_brands.csv
+```
