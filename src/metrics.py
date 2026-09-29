@@ -1,7 +1,10 @@
+# Pending supervisor decision: DDInter Unknown = 18.6% of pairs
+# Alternative is to exclude Unknown pairs entirely.
 SEVERITY_WEIGHTS = {
     "major": 3.0,
     "moderate": 2.0,
-    "minor": 1.0
+    "minor": 1.0,
+    "unknown": 1.0,   # explicit: DDInter Unknown = 18.6% of pairs
 }
 
 def _canonical_pair(drug_a: str, drug_b: str) -> tuple[str, str]:

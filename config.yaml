@@ -1,0 +1,9 @@
+paths:
+  catalogue: data/external/catalogue_2026-09-25/medicine.csv
+  ddinter: data/interim/ddinter_combined.csv
+  gold_brands: data/processed/gold_brands.csv
+normalize:
+  threshold: 0.85
+screen:
+  polypharmacy_threshold: 5
+  count_unknown_severity_as_alert: true
