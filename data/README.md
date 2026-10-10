@@ -175,7 +175,6 @@ on any resulting paper.
 ---
 
 # Licence and redistribution
-
 Raw datasets are NOT committed to this repository. They are linked
 here instead. `.gitignore` excludes:
 
@@ -184,4 +183,5 @@ data/raw/*
 data/external/*
 data/interim/*
 !**/.gitkeep
+
 ```
